@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/image_view_item_rssps_thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="62dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rss" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier_item_rssps_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="image_view_item_rssps_thumbnail"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_item_rssps_title"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-bold"
+        android:gravity="center_vertical"
+        android:maxLines="3"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:text="Restauracja Roberta Lewandowskiego roz"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image_view_item_rssps_thumbnail" />
+
+    <TextView
+        android:id="@+id/text_view_item_rssps_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Warunki agrometeorologiczne oraz stan zaawansowania siewów warzyw gruntowych obecnie jest bardzo zróżnicowany w poszczególnych rejonach kraju - informuje serwis sadyogrody.pl."
+        app:layout_constraintTop_toBottomOf="@id/text_view_item_rssps_title" />
+
+    <TextView
+        android:id="@+id/text_view_item_rssps_publish_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-regular"
+        android:text="16 Sat, Apr 2018"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_item_rssps_description" />
+
+</android.support.constraint.ConstraintLayout>

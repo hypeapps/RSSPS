@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RSSPS</string>
+    <string name="snackbar_error_message">Nie udało się załadować treści</string>
+    <string name="snack_bar_error_action">Ponów</string>
+</resources>
