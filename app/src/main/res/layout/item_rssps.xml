@@ -14,8 +14,7 @@
         android:id="@+id/image_view_item_rssps_thumbnail"
         android:layout_width="100dp"
         android:layout_height="62dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/rss" />
+        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/text_view_item_rssps_title"
